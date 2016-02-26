@@ -1,0 +1,24 @@
+{
+  "name": "OcamlPcre",
+  "version": "0.0.0",
+  "description": "-",
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "scripts": {
+    "postinstall": "node buildPcreStub.js"
+  },
+  "readme": "-",
+  "_napaResolved": "git://github.com/mmottl/pcre-ocaml.git",
+  "dependencies": {
+    "CommonML": "git://github.com/jordwalke/CommonML.git"
+  },
+  "CommonML": {
+    "exports": [
+      "Pcre"
+    ],
+    "compileFlags": ["-w a"],
+    "linkFlags": []
+  }
+}
