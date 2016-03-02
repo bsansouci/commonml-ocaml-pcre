@@ -12,13 +12,14 @@
   "readme": "-",
   "_napaResolved": "git://github.com/mmottl/pcre-ocaml.git",
   "dependencies": {
-    "CommonML": "git://github.com/jordwalke/CommonML.git"
+    "CommonML": "git://github.com/bsansouci/CommonML.git"
   },
   "CommonML": {
     "exports": [
       "Pcre"
     ],
     "compileFlags": ["-w a"],
-    "linkFlags": []
+    "linkFlags": ["-cclib -lpcre"],
+    "foreignDependencies": ["pcre_stubs.o"]
   }
 }
