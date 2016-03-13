@@ -6,11 +6,7 @@
     "type": "git",
     "url": "-"
   },
-  "scripts": {
-    "postinstall": "node buildPcreStub.js"
-  },
   "readme": "-",
-  "_napaResolved": "git://github.com/mmottl/pcre-ocaml.git",
   "dependencies": {
     "CommonML": "git://github.com/bsansouci/CommonML.git"
   },
@@ -20,6 +16,6 @@
     ],
     "compileFlags": ["-w a"],
     "linkFlags": ["-cclib -lpcre"],
-    "foreignDependencies": ["pcre_stubs.o"]
+    "foreignDependencies": ["src/pcre_stubs.c"]
   }
 }
